@@ -271,7 +271,7 @@ public class CardStack extends RelativeLayout {
         View contentView = null;
         if(mContentResource != 0) {
             LayoutInflater lf = LayoutInflater.from(getContext());
-            contentView = lf.inflate(mContentResource,null);
+            contentView = lf.inflate(mContentResource, this, false);
         }
         return contentView;
 
